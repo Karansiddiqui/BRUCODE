@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar with Toggle Button</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar Container -->
+    <nav class="bg-white shadow-md p-4">
+      <div class="flex justify-between items-center">
+        <!-- Left-aligned Brand or Title -->
+        <h1 class="text-xl font-bold text-gray-800">Navbar</h1>
+
+        <!-- Hamburger Button (Toggle) -->
+        <button
+          class="sm:hidden text-gray-700 focus:outline-none"
+          id="toggleButton"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Navbar Links (Inline Block) -->
+        <ul
+          class="text-center sm:flex sm:space-x-6 sm:static sm:w-auto sm:bg-transparent absolute top-0 left-0 w-full bg-white py-4 sm:py-0 sm:flex-row sm:items-center sm:visible hidden transition-all duration-300 ease-in-out"
+          id="navbarLinks"
+        >
+          <li class="sm:inline-block">Home</li>
+          <li class="sm:inline-block">About</li>
+          <li class="sm:inline-block">Contacts</li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const navbarLinks = document.getElementById("navbarLinks");
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
