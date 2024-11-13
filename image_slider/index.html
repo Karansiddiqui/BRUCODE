@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .slider {
+        transition: transform 0.5s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="slider-container sm:max-w-[600px] mx-auto mt-10 relative">
+      <!-- Image Slider -->
+      <div id="slider" class="slider flex space-x-4 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1730148139333-1dc38fa04f05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+          alt="Image 1"
+          class="w-[200px] h-[400px] object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1729892938035-91ccb9a0419b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="Image 2"
+          class="w-[200px] h-[400px] object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1730825447957-028c9e2efeba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+          alt="Image 3"
+          class="w-[200px] h-[400px] object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1730148139333-1dc38fa04f05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+          alt="Image 1"
+          class="w-[200px] h-[400px] object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1729892938035-91ccb9a0419b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="Image 2"
+          class="w-[200px] h-[400px] object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1730825447957-028c9e2efeba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+          alt="Image 3"
+          class="w-[200px] h-[400px] object-cover"
+        />
+      </div>
+
+      <!-- Next and Prev Buttons -->
+      <button
+        id="prevBtn"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hidden"
+      >
+        Prev
+      </button>
+      <button
+        id="nextBtn"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+      >
+        Next
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
