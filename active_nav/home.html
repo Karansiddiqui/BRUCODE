@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Active Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .active {
+        font-weight: bold;
+        color: #2563eb;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 fixed top-0 left-0 w-full z-10">
+      <ul class="flex space-x-6 justify-center">
+        <li>
+          <a
+            href="home.html"
+            class="nav-link text-gray-700 hover:text-blue-500 active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="nav-link text-gray-700 hover:text-blue-500"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="services.html"
+            class="nav-link text-gray-700 hover:text-blue-500"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="nav-link text-gray-700 hover:text-blue-500"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <section
+      class="h-screen bg-blue-100 flex items-center justify-center pt-16"
+    >
+      <h2 class="text-4xl">Home Section</h2>
+    </section>
+
+    <section
+      id="about"
+      class="h-screen bg-green-100 flex items-center justify-center pt-16"
+    >
+      <h2 class="text-4xl">About Section</h2>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

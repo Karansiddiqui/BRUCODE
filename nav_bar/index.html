@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Navbar with Toggle Button</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-gray-100">
     <!-- Navbar Container -->
@@ -35,8 +39,11 @@
         </button>
 
         <!-- Navbar Links (Inline Block) -->
-        <ul class="fixed sm:static top-10" id="navbarLinks">
-          <li class="sm:inline-block">Home</li>
+        <ul class="fixed sm:static top-10 hidden sm:block" id="navbarLinks">
+          <div class="sm:inline-block flex">
+            <i class="ri-home-5-line" class="sm:inline-block"></i>
+            <li class="sm:inline-block">Home</li>
+          </div>
           <li class="sm:inline-block">About</li>
           <li class="sm:inline-block">Contacts</li>
         </ul>
